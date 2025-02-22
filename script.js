@@ -1,5 +1,5 @@
 // Update with your actual Replit backend URL
-const backendUrl = "https://your-backend.replit.app";
+const backendUrl = "https://School-Chat.replit.app";
 const socket = io(backendUrl);
 let currentUser = null;
 
