@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Login / Signup Section -->
+  <div id="login-container">
+    <h1>Chat App Login</h1>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button id="login-btn">Login</button>
+    <button id="signup-btn">Sign Up</button>
+  </div>
 
+  <!-- Chat Application Section -->
+  <div id="chat-container" style="display:none;">
+    <h2>Welcome, <span id="current-user"></span></h2>
+    <div id="friend-section">
+      <h3>Friends</h3>
+      <input type="text" id="friend-username" placeholder="Friend's username">
+      <button id="add-friend-btn">Add Friend</button>
+      <ul id="friend-list"></ul>
+    </div>
+    <div id="dm-section">
+      <h3>Direct Messages</h3>
+      <div id="messages"></div>
+      <input type="text" id="message-input" placeholder="Type your message...">
+      <button id="send-msg-btn">Send</button>
+    </div>
+  </div>
+
+  <!-- Include Socket.io client library -->
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
